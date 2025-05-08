@@ -1,0 +1,2 @@
+SELECT * FROM channel;.sql
+TRUNCATE TABLE genre;.sql
