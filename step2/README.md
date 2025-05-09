@@ -40,9 +40,10 @@ USE internet_tv
 ## テーブル作成
 
 テーブル設計表をもとに各テーブルの作成を行います。
+
 mysql で下記のコマンドを実行し、同フォルダ内のテーブル作成用 SQL ファイル(create_tables_query.sql)を実行してください。
 
-`source <実行するファイルのパス>`
+`SOURCE <実行するファイルのパス>`
 
 _※ファイルパスはフォルダの保存先に応じて適宜変更を行なってください。_
 
@@ -53,6 +54,12 @@ SOURCE /Users/user/Desktop/Apprentice_test/internet_tv/step2/create_tables_query
 # サンプルデータ作成
 
 作成したテーブルにサンプルデータを追加します。
+
+mysql で下記のコマンドを実行し、同フォルダ内のサンプルデータ追加用 SQL ファイル(insert_sampledata_query.sql)を実行してください。
+
+`SOURCE <実行するファイルのパス>`
+
+_※ファイルパスはフォルダの保存先に応じて適宜変更を行なってください。_
 
 ```
 SOURCE /Users/user/Desktop/Apprentice_test/internet_tv/step2/insert_sampledata_query.sql
