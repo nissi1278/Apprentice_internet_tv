@@ -3,11 +3,11 @@ CREATE TABLE shows( show_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
                     show_title VARCHAR(200) NOT NULL,
                     show_detail TEXT,
                     PRIMARY KEY(show_id));
-CREATE TABLE genre( genre_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+CREATE TABLE genre( genre_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
                     genre_name VARCHAR(100) NOT NULL,
                     PRIMARY KEY(genre_id),
                     UNIQUE(genre_name));
-CREATE TABLE channel( channel_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+CREATE TABLE channel( channel_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
                       channel_name VARCHAR(100) NOT NULL,
                       PRIMARY KEY(channel_id),
                       UNIQUE(channel_name));
@@ -53,7 +53,6 @@ CREATE TABLE show_schedules( channel_id SMALLINT UNSIGNED NOT NULL,
                               );
 CREATE TABLE show_genre( show_id INT UNSIGNED NOT NULL,
                          genre_id SMALLINT UNSIGNED NOT NULL,
-                         genre_order TINYINT UNSIGNED NOT NULL DEFAULT 0,
                          PRIMARY KEY(show_id,genre_id),
                          FOREIGN KEY(show_id)
                             REFERENCES shows(show_id)

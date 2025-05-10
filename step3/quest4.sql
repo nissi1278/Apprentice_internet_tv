@@ -10,4 +10,4 @@ INNER JOIN season  AS se ON se.season_id  = ep.season_id
 WHERE      ss.channel_id = 1
 AND        ss.start_time >= CURDATE() 
 AND        ss.start_time < CURDATE() + INTERVAL 8 DAY
-ORDER BY ss.start_time;
+ORDER BY   ss.start_time;
